@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/providers";
-
+import BottomBar from "@/components/BottomBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,7 +19,6 @@ export const metadata: Metadata = {
   description: "A simple ride-hailing app using Next.js and Google Maps API",
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -32,6 +31,7 @@ export default function RootLayout({
       >
         <Providers>
           {children}
+          <BottomBar />
         </Providers>
       </body>
     </html>
