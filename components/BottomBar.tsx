@@ -8,7 +8,7 @@ export default function BottomBar() {
 
   const tabs = [
     { icon: <Home size={22} />, label: "Home", path: "/" },
-    { icon: <Map size={22} />, label: "Locate", path: "/locate" },
+    { icon: <Map size={22} />, label: "Map", path: "/locate" },
   ];
 
   return (
